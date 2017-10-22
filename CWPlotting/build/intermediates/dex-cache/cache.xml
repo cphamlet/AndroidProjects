@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/cphamlet/AndroidStudioProjects/CWPlotting/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/cphamlet/AndroidStudioProjects/CWPlotting/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_7e6771c943405d501d3bb8553197c24e2c7611e1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/cphamlet/AndroidStudioProjects/CWPlotting/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a9bb8308cfd4fd118deb85c949c64b9d262742a5">
+        <dex dex="/Users/cphamlet/AndroidStudioProjects/CWPlotting/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_28627f4490f53ecc60653d2625b93a6340a1d168/classes.dex" />
+    </item>
+
+</items>
