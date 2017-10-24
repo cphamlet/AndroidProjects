@@ -32,16 +32,12 @@ public class Main extends AppCompatActivity {
         Sensor proximity = sm.getDefaultSensor(Sensor.TYPE_PROXIMITY);
         TextView t = (TextView) findViewById(R.id.accel_status);
         if(accelerometer != null){
-            t.setText("1.) Present Resolute: "+accelerometer.getResolution() + " Rng: " +
+            t.setText("Y; Res: "+accelerometer.getResolution() + " Rng: " +
                     accelerometer.getMaximumRange() );
-        }else{
-            t.setText("Sensor N/A");
         }
         t = (TextView) findViewById(R.id.prox_status);
-        if(proximity != null){
-            t.setText("1.) Present Resolut: "+proximity.getResolution() + " Rng: " + proximity.getMaximumRange() );
-        }else{
-            t.setText("Sensor N/A");
+        if(proximity != null) {
+            t.setText("Y; Res: " + proximity.getResolution() + " Rng: " + proximity.getMaximumRange());
         }
 
 
@@ -49,12 +45,12 @@ public class Main extends AppCompatActivity {
 
     public void changeViewAcc(View v){
         Intent intent = new Intent(this, accelerator.class);
-        intent.putExtra("button_type", "accelerator");;
+        intent.putExtra("sensor_type", Sensor.TYPE_ACCELEROMETER);
         startActivity(intent);
         }
     public void changeViewProx(View v){
         Intent intent = new Intent(this, accelerator.class);
-        intent.putExtra("button_type", "proximity");;
+        intent.putExtra("sensor_type", Sensor.TYPE_PROXIMITY);
         startActivity(intent);
     }
-    }
+}

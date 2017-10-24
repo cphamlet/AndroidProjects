@@ -20,7 +20,7 @@
             android:id="@+id/accel_status"
             android:layout_width="270dp"
             android:layout_height="wrap_content"
-            android:text="   View" />
+            android:text="   Sensor N/A" />
     </LinearLayout>
 
     <LinearLayout
@@ -38,7 +38,7 @@
             android:id="@+id/prox_status"
             android:layout_width="270dp"
             android:layout_height="wrap_content"
-            android:text="   View" />
+            android:text="   Sensor N/A" />
         </LinearLayout>
 
 </LinearLayout>

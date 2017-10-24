@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context="com.example.cphamlet.cwplotting.accelerator">
 
-<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
     <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
     <!--xmlns:tools="http://schemas.android.com/tools"-->
     <!--android:layout_width="match_parent"-->
@@ -40,6 +40,88 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:layout_marginStart="31dp" />
+
+    <TextView
+        android:id="@+id/maxRange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/button_back"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_marginTop="23dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_marginEnd="25dp"
+        android:text="10"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:text="5"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/meanID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5"
+        android:text="Mean: "
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/varianceID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:text="Var: "
+        android:textColor="@android:color/background_light" />
+
+    <ImageView
+        android:id="@+id/accell_animno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/sym_call_outgoing"
+        android:layout_above="@+id/plotview"
+        android:layout_toEndOf="@+id/button_back" />
+
+    <ImageView
+        android:id="@+id/accell_animyes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/sym_call_missed"
+        android:layout_alignTop="@+id/accell_animno"
+        android:layout_toEndOf="@+id/button_back" />
+
+    <ImageView
+        android:id="@+id/prox_far"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        app:srcCompat="@android:drawable/ic_lock_silent_mode"
+        android:layout_alignTop="@+id/prox_close"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/prox_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        app:srcCompat="@android:drawable/ic_lock_silent_mode_off"
+        android:layout_alignTop="@+id/accell_animno"
+        android:layout_alignParentEnd="true" />
 
 
     <!--</LinearLayout>-->
